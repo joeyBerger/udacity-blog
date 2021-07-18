@@ -1,7 +1,7 @@
 /* Mobile first */
 body {
     background-color: #A9A9A9;
-    font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial;
 }
 .container{
   display:grid;
@@ -81,7 +81,7 @@ h2 {
 h3 {
     color: floralwhite;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 h4, h5 {
@@ -90,7 +90,7 @@ h4, h5 {
 }
 
 h5 {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .blog-types-container {
