@@ -1,12 +1,12 @@
 /* Mobile first */
 body {
-    background-color: black;
+    background-color: #A9A9A9;;
 }
 .container{
   display:grid;
   grid-template-columns: 100%;
   grid-template-rows: 15% 9% 0% 75%;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   grid-template-areas: 
   "hd"
   "sh"
@@ -15,28 +15,37 @@ body {
   "ft";
   /* height: auto; */
   /* height: 100vh; */
-  color: red;
+  color: black;
+  /* CAEBF2 A9A9A9 FF3B3F EFEFEF */
 }
 .box{
     /* border: 1px solid red;  */
-    background: #F8FA9D;
+    /* background: #F8FA9D; */
 }
 
 .header{
     grid-area:hd;
-    background-color: gray;
+    /* background-color: gray; */
+    text-align: center;
+    margin: auto;
+    padding: 0px 30px
 }
 
 .sub-header{
     grid-area:sh;
     display: flex;
     flex-direction: row;
+    text-align: center;
+    margin: auto;
+    padding: 0px 30px;
+    text-decoration: underline;
 }
 
 .footer{
     grid-area: ft;
     font-size: 15px;
     text-align: center;
+    /* color: floralwhite; */
 }
 
 .sidebar{
@@ -48,11 +57,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    text-align: center;
 }
 
 h1,h2 {
-    padding: 0px 20px;
-    /* color: floralwhite; */
+    /* padding: 0px 20px; */
+    /* color: #FF3B3F; */
 }
 
 h2 {
@@ -60,8 +70,9 @@ h2 {
 }
 
 h3 {
-    /* color: blue; */
+    color: floralwhite;
     text-align: center;
+    font-size: 22px;
 }
 
 h4, h5 {
@@ -82,20 +93,22 @@ h5 {
 }
 
 .outer-blog-container {
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .blog-container {
     display: flex;
-    justify-content: space-evenly;;
+    justify-content: space-evenly;
     /* border: 30px solid green; */
 }
 
 .blog-item {
     height: 200px;
     width: 200px;
-    /* margin: auto; */
-    border: 1px solid green; 
+    margin: 10px 0px;
+    background-color: #CAEBF2;
+    padding: 10px;
+    /* border: 1px solid green;  */
 }
 
 .author {
@@ -107,12 +120,12 @@ h5 {
     font-size: 7px;
 }
 
-#truncate {
+/* #truncate {
     white-space: nowrap;
     width: 100px;
     overflow: hidden;
     text-overflow: ellipsis;
-}
+} */
 
 /* If Screen Is Wide Enough */
 @media(min-width:900px){
