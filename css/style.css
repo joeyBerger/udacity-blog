@@ -1,22 +1,19 @@
 /* Mobile first */
 body {
-    background-color: #A9A9A9;;
+    background-color: #A9A9A9;
+    font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 .container{
   display:grid;
   grid-template-columns: 100%;
-  grid-template-rows: 15% 9% 0% 75%;
-  /* border: 2px solid yellow; */
+  grid-template-rows: 15% 9% 0% 75% 0.2%;
   grid-template-areas: 
   "hd"
   "sh"
   "sd"
   "main"  
   "ft";
-  /* height: auto; */
-  /* height: 100vh; */
   color: black;
-  /* CAEBF2 A9A9A9 FF3B3F EFEFEF */
 }
 .box{
     /* border: 1px solid red;  */
@@ -26,9 +23,19 @@ body {
 .header{
     grid-area:hd;
     /* background-color: gray; */
+    background-image: url("../images/flag.jpeg");
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
     text-align: center;
     margin: auto;
-    padding: 0px 30px
+    width: 100%;
+    /* padding: 0px 30px;
+    
+     */
+    /* border: 1px solid gray; */
+    border-bottom: 1px solid #aab8c2;
+    color: floralwhite;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .sub-header{
@@ -39,6 +46,8 @@ body {
     margin: auto;
     padding: 0px 30px;
     text-decoration: underline;
+    background-image: url("images/flag");
+
 }
 
 .footer{
@@ -93,7 +102,7 @@ h5 {
 }
 
 .outer-blog-container {
-    /* border: 1px solid green; */
+    border: 1px solid gray;
 }
 
 .blog-container {
@@ -108,7 +117,7 @@ h5 {
     margin: 10px 0px;
     background-color: #CAEBF2;
     padding: 10px;
-    /* border: 1px solid green;  */
+    border: 1px solid gray;
 }
 
 .author {
