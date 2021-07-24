@@ -6,33 +6,25 @@ body {
 .container{
   display:grid;
   grid-template-columns: 100%;
-  grid-template-rows: 15% 9% 0% 75% 0.2%;
+  grid-template-rows: 15% 9% 75%;
   grid-template-areas: 
   "hd"
   "sh"
-  "sd"
   "main"  
   "ft";
   color: black;
 }
 .box{
-    /* border: 1px solid red;  */
+    border: 1px solid red; 
     /* background: #F8FA9D; */
 }
 
 .header{
     grid-area:hd;
-    /* background-color: gray; */
     background-image: url("../images/flag.jpeg");
-    /* filter: blur(8px);
-    -webkit-filter: blur(8px); */
     text-align: center;
     margin: auto;
     width: 100%;
-    /* padding: 0px 30px;
-    
-     */
-    /* border: 1px solid gray; */
     border-bottom: 1px solid #aab8c2;
     color: floralwhite;
     text-shadow: 2px 2px 4px #000000;
@@ -54,6 +46,9 @@ body {
     grid-area: ft;
     font-size: 15px;
     text-align: center;
+    border-top: 1px solid #aab8c2;
+    margin-top: 20px;
+    padding: 15px 0px;
     /* color: floralwhite; */
 }
 
@@ -81,7 +76,7 @@ h2 {
 h3 {
     color: floralwhite;
     text-align: center;
-    font-size: 20px;
+    font-size: 15x;
 }
 
 h4, h5 {
@@ -102,7 +97,7 @@ h5 {
 }
 
 .outer-blog-container {
-    border: 1px solid gray;
+    border-top: 1px solid #aab8c2;
 }
 
 .blog-container {
@@ -115,7 +110,8 @@ h5 {
     height: 200px;
     width: 200px;
     margin: 10px 0px;
-    background-color: #CAEBF2;
+    /* background-color: #CAEBF2; */
+    box-shadow: 1px 2px #888888;
     padding: 10px;
     border: 1px solid gray;
 }
@@ -126,7 +122,8 @@ h5 {
 
 .article-link{
     text-align: center;
-    font-size: 7px;
+    font-size: 10px;
+    padding-top: 15px;
 }
 
 /* #truncate {
