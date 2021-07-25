@@ -116,6 +116,8 @@ h5 {
     background-position:center center;
     background-repeat:no-repeat;
     background-clip:content-box;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .facebook {
@@ -124,6 +126,8 @@ h5 {
 
 .twitter {
     background-image: url("../images/twitter-logo.png");
+    width: 42px;
+    height: 42px;
 }
 
 .linkedin {
