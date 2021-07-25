@@ -25,7 +25,6 @@ h3 {
     font-size: 15x;
 }
 
-
 h4, h5 {
    text-align: center;
 }
@@ -42,7 +41,7 @@ h5 {
   display:grid;
   grid-template-columns: 100%;
   /* grid-template-rows: 15% 15%; */
-  grid-template-rows: 200px 80px 240px 600px 10px;
+  grid-template-rows: 200px 80px 400px 600px 10px;
   grid-template-areas: 
   "hd"
   "sh"
@@ -63,6 +62,11 @@ h5 {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background-size: cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-clip:content-box;
 }
 
 .sub-header {
@@ -106,7 +110,7 @@ h5 {
 
 .social-media-logo {
     padding: 5px 0px;
-    width: 100px;
+    width: 60px;
     height: 60px;
     background-size: contain;
     background-position:center center;
@@ -126,12 +130,21 @@ h5 {
     background-image: url("../images/linkedin-logo.png");
 }
 
+.author-name {
+    font-size: 26px;
+}
+
+.author-info {
+    padding: 10px;
+}
+
 .avatar {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: 2px solid gray;
     margin-top: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     /* vertical-align: middle; */
 }
 
@@ -141,10 +154,10 @@ h5 {
 }
 
 .content {
-    /* grid-area: main; */
-    /* display: flex; */
-    /* flex-direction: column;
-    justify-content: center; */
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     text-align: center;
 }
 
@@ -204,16 +217,33 @@ h5 {
 
 @media(min-width:900px) {
 .container {
-      display:grid;
-      grid-template-columns: 200px;
-      grid-template-rows: 100px 100px 850px;
-      grid-template-areas: 
-      "hd hd hd hd hd hd hd hd"
-      "ff sh sh sh sh sh sh sh"
-      "sd main main main main main main main"
-      "ft ft ft ft ft ft ft ft";
-      height: none;
+    display:grid;
+    /* grid-template-columns: 100%; */
+    grid-template-columns: 200px;
+    grid-template-rows: 200px 80px 400px 600px 10px;    
+    grid-template-areas: 
+    /* "hd"
+    "sh"
+    "sd"
+    "ai"
+    "main"  
+    "ft"; */
+    "hd hd hd hd hd hd hd hd"
+    "ff sh sh sh sh sh sh sh"
+    "sd ai ai ai ai ai ai ai"
+    "sd main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+    /* color: black; */
+    height: none;
   }
+      
+  .content {
+    /* grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; */
+}
 
   .sidebar {
     grid-area: sd;
@@ -223,7 +253,6 @@ h5 {
   .signin-button-container {
     padding-top: 10px;
     display: grid;
-
   }
 
   .sidebar-buttons {
