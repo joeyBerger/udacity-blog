@@ -1,0 +1,33 @@
+header {
+    grid-area:hd;
+    background-image: url("../images/flag.jpeg");
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #aab8c2;
+    color: floralwhite;
+    text-shadow: 2px 2px 4px #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-clip:content-box;
+}
+
+.sidebar {
+    grid-area: sd;
+    display: none;
+}
+
+footer {
+    grid-area: ft;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-top: 1px solid #aab8c2;
+    margin-top: 20px;
+    padding: 25px;
+}
